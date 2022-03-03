@@ -1,5 +1,62 @@
 :root {
     --primary-color: #e6e6e6;
-    --secondary-color: #838482;
-    --tertiary-color: #393a37;
+    --secondary-color: #fbdd44; 
+    --tertiary-color: #bbbbbb;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    margin: 5px;
+    padding: 5px;
+}
+
+body {
+    background-color: var(--tertiary-color);
+}
+
+/* Name / Navigation */
+header h1 {
+    font-family: 'Belgrano', serif;
+    font-size: 72px;
+    width: 100%;
+    color: var(--secondary-color);
+}
+
+.header-p {
+    font-family: 'Belgrano', serif;
+    font-size: 32px;
+    padding-left: 100px;
+}
+
+.header-p-color {
+    color: #3ca6dc;
+}
+
+.header-brackets {
+    font-family: 'Belgrano', serif;
+    font-size: 72px;
+    color: var(--black);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav1, .nav2, .nav3 {
+    border: 1px solid var(--black);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.nav-links {
+    text-decoration: none;
+    font-size: 28px;
+    color: var(--secondary-color);
+}
+
+/* check order later */
+header img {
+    width: 100%;
 }
