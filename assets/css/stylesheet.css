@@ -1,53 +1,71 @@
 :root {
     --primary-color: #e6e6e6;
     --secondary-color: #fbdd44; 
-    --tertiary-color: #bbbbbb;
+    --tertiary-color: #333333;
+    --comment: #57be57;
     --white: #ffffff;
     --black: #000000;
 }
 
 * {
-    margin: 5px;
-    padding: 5px;
+    font-family: 'Belgrano', serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: var(--tertiary-color);
+    background-color: var(--white);
 }
 
-/* Name / Navigation */
+/* Name / Navigation sec. - START */
+.home {
+    margin: 0;
+    padding: 15px;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
 header h1 {
-    font-family: 'Belgrano', serif;
     font-size: 72px;
-    width: 100%;
     color: var(--secondary-color);
+    flex-wrap: wrap;
 }
 
-.header-p {
-    font-family: 'Belgrano', serif;
-    font-size: 32px;
-    padding-left: 100px;
+.name-occupation {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+
 }
 
-.header-p-color {
-    color: #3ca6dc;
-}
-
-.header-brackets {
-    font-family: 'Belgrano', serif;
+.home-brackets { /* this rule affects outside of the parent container */
     font-size: 72px;
-    color: var(--black);
+    color: var(--white);
+}
+
+.occupation {
+    font-size: 24px;
+    color: var(--comment)
 }
 
 .nav-list {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.nav1, .nav2, .nav3 {
+/* .nav1, .nav2, .nav3 {
     border: 1px solid var(--black);
-    background: rgba(0, 0, 0, 0.7);
+    background: none;
+    border-radius: 45px 45px;
+} */
+
+/* .nav1:hover, .nav2:hover, .nav3:hover {
+    background: var(--secondary-color);
+    color: var(--black);
 }
 
 .nav-links {
@@ -56,7 +74,43 @@ header h1 {
     color: var(--secondary-color);
 }
 
+.nav-links:hover {
+    color: var(--black)
+} */
+
 /* check order later */
 header img {
     width: 100%;
+}
+
+/* transition: all 0.25s ease-in */
+
+/* Figure sec. - START */
+/* figure {
+    height: 610px;
+    width: 100%;
+    background-image: url("../images/avatar.svg");
+    background-size: cover;
+    background-position: center;
+} */
+
+/* Footer sec. - START */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:flex-end;
+    color: var(--black);
+}
+
+.contact {
+    font-size: 32px;
+}
+
+.copyright {
+    background-color: var(--black);
+    width: 100%;
+    color: var(--secondary-color);
+    text-align: right;
+    padding-right: 10px;
 }
