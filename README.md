@@ -6,7 +6,7 @@ Thank you for taking the time to review my portfolio!
 
 ## Description
 
-*portfolio-vmlujanjr* is a professional portfolio to showcase my skillset and projects that I have previously worked on.
+[portfolio-vmlujanjr](https://vmlujanjr.github.io/portfolio-vmlujanjr/) is a professional portfolio to showcase my skillset and projects that I have previously worked on.
 
 ## Objectives
 
@@ -44,7 +44,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 **Deployment**
 
-- Application deployed at live URL
+- ~~Application deployed at live URL~~
 - Application loads with no errors
 - Application GitHub URL submitted
 - GitHub repository contains application code
@@ -55,11 +55,11 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 **Repository Quality**
 
-- Repository has a unique name
+- ~~Repository has a unique name~~
 - Repository follows best practices for file structure and naming conventions
 - Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 - Repository contains multiple descriptive commit messages
-- Repository contains quality README.md with description, screenshots, link to deployed application
+- ~~Repository contains quality README.md with description, screenshots, link to deployed application~~
 
 ### **Sample Portfolio**
 

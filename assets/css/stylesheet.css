@@ -1,7 +1,8 @@
 :root {
     --primary-color: #e6e6e6;
     --secondary-color: #fbdd44; 
-    --tertiary-color: #333333;
+    --tertiary-color: #272626;
+    --element: #5faeee;
     --comment: #57be57;
     --white: #ffffff;
     --black: #000000;
@@ -18,43 +19,96 @@ body {
     background-color: var(--white);
 }
 
-/* Name / Navigation sec. - START */
+/* Home / Occupation sec. - START */
 .home {
     margin: 0;
-    padding: 15px;
-    background-color: var(--black);
+    padding-top: 15px;
+    background-color: var(--tertiary-color);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: left;
 }
 
-header h1 {
-    font-size: 72px;
+.name {
+    font-size: 48px;
     color: var(--secondary-color);
-    flex-wrap: wrap;
+    text-decoration: none;
 }
 
-.name-occupation {
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-
-}
-
-.home-brackets { /* this rule affects outside of the parent container */
-    font-size: 72px;
+/* good */
+.home-brackets {
+    font-size: 48px;
+    font-weight: normal;
     color: var(--white);
 }
-
+/* good */
 .occupation {
+    padding-left: 75px; /* might have to set up auto for when the screen gets smaller */
+    font-size: 32px;
+    color: var(--white)
+}
+/* good */
+.element-color {
+    color: var(--element);
+}
+/* good */
+.comment-color {
+    color: var(--comment);
+}
+
+/* Navigation Menu */
+header nav { /* fix sticky */
     font-size: 24px;
-    color: var(--comment)
+    padding-top: 15px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-attachment: fixed;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     justify-content: space-around;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: var(--element);
+}
+
+/* Nav cont... - Before and After Hover effects */
+.about-link:after {
+    content: "about";
+}
+
+.about-link:hover {
+    color: var(--secondary-color);
+}
+.about-link:hover::after {
+    content: "/* about */";
+    color: var(--comment);
+}
+
+.projects-link:after {
+    content: "projects";
+}
+
+.projects-link:hover::after {
+    content: "/* projects */";
+    color: var(--comment);
+}
+
+.contact-link:after {
+    content: "contact";
+}
+
+.contact-link:hover::after {
+    content: "/* contact */";
+    color: var(--comment);
 }
 
 /* .nav1, .nav2, .nav3 {
@@ -69,18 +123,7 @@ header h1 {
 }
 
 .nav-links {
-    text-decoration: none;
-    font-size: 28px;
     color: var(--secondary-color);
-}
-
-.nav-links:hover {
-    color: var(--black)
-} */
-
-/* check order later */
-header img {
-    width: 100%;
 }
 
 /* transition: all 0.25s ease-in */
@@ -94,8 +137,14 @@ header img {
     background-position: center;
 } */
 
-/* Footer sec. - START */
+/* Contact sec. - START */
+.contact {
+    font-size: 32px;
+}
+
+/* Copyright sec. - START */
 footer {
+    background-color: var(--white);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -103,12 +152,8 @@ footer {
     color: var(--black);
 }
 
-.contact {
-    font-size: 32px;
-}
-
 .copyright {
-    background-color: var(--black);
+    background-color: var(--tertiary-color);
     width: 100%;
     color: var(--secondary-color);
     text-align: right;
