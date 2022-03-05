@@ -144,18 +144,14 @@ header nav { /* fix sticky */
 
 /* Copyright sec. - START */
 footer {
-    background-color: var(--white);
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items:flex-end;
-    color: var(--black);
+    justify-content: center;
 }
 
 .copyright {
-    background-color: var(--tertiary-color);
-    width: 100%;
-    color: var(--secondary-color);
-    text-align: right;
-    padding-right: 10px;
+    padding: 5px;
 }
