@@ -6,6 +6,7 @@
     --comment: #57be57;
     --white: #ffffff;
     --black: #000000;
+    --bpadding: 5px;
 }
 
 * {
@@ -139,7 +140,27 @@ header nav { /* fix sticky */
 
 /* Contact sec. - START */
 .contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.contact h3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     font-size: 32px;
+    padding: var(--bpadding);
+}
+ 
+.contact address {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 16px;
+    padding: var(--bpadding)
 }
 
 /* Copyright sec. - START */
@@ -153,5 +174,5 @@ footer {
 }
 
 .copyright {
-    padding: 5px;
+    padding: var(--bpadding);
 }
