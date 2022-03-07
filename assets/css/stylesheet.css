@@ -139,7 +139,35 @@ header nav { /* fix sticky */
 } */
 
 /* Projects sec. - START */
+.projects {
+    padding: var(--bpadding);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid red; /* temp */
+}
 
+.projects-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid green; /* temp */
+}
+
+.fig1 {
+    padding: var(--bpadding);
+}
+
+.fig2, .fig3 {
+    flex: 50%;
+    padding: var(--bpadding);
+}
+
+.fig1 img, .fig2 img, .fig3 img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--secondary-color);
+}
 
 /* Contact sec. - START */
 .contact {
