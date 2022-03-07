@@ -169,6 +169,18 @@ header nav { /* fix sticky */
     border: 2px solid var(--secondary-color);
 }
 
+.fig1 img {
+    border-radius: 0 150px 50px 150px;
+}
+
+.fig2 img {
+    border-radius: 0 0 50px 50px;
+}
+
+.fig3 img {
+    border-radius: 0 0 50px 50px;
+}
+
 /* Contact sec. - START */
 .contact {
     display: flex;
