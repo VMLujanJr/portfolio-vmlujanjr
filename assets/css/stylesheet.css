@@ -112,45 +112,40 @@ header nav { /* fix sticky */
     color: var(--comment);
 }
 
-/* .nav1, .nav2, .nav3 {
-    border: 1px solid var(--black);
-    background: none;
-    border-radius: 45px 45px;
-} */
-
-/* .nav1:hover, .nav2:hover, .nav3:hover {
-    background: var(--secondary-color);
-    color: var(--black);
-}
-
-.nav-links {
-    color: var(--secondary-color);
-}
-
-/* transition: all 0.25s ease-in */
-
-/* Figure sec. - START */
-/* figure {
-    height: 610px;
-    width: 100%;
-    background-image: url("../images/avatar.svg");
-    background-size: cover;
-    background-position: center;
-} */
-
 /* About sec. - START */
 .about {
     border: 1px solid red;
 }
 
+.about h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    padding: var(--bpadding);
+}
+
+.introduction {
+    text-align: center;
+}
+
 .about figure {
+    text-align: center;
+}
+.about img {
     border: 2px solid blueviolet;
 }
 
 .profile-info {
-    border: 2px solid green;
+    line-height: 1.5;
 }
-
+.test ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    list-style-type: disc;
+}
 /* Projects sec. - START */
 .projects {
     padding: var(--bpadding);
