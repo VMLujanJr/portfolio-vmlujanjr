@@ -144,17 +144,24 @@ header nav { /* fix sticky */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border: 2px solid red; /* temp */
+}
+
+.projects h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    padding: var(--bpadding);
 }
 
 .projects-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 2px solid green; /* temp */
 }
 
 .fig1 {
+    flex: 100%;
     padding: var(--bpadding);
 }
 
@@ -163,22 +170,17 @@ header nav { /* fix sticky */
     padding: var(--bpadding);
 }
 
-.fig1 img, .fig2 img, .fig3 img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid var(--secondary-color);
+.rb-img, .hz-img, .ph-img {
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--secondary-color);
+    transition: 1.5s ease-in-out;
 }
 
-.fig1 img {
-    border-radius: 0 150px 50px 150px;
-}
-
-.fig2 img {
-    border-radius: 0 0 50px 50px;
-}
-
-.fig3 img {
-    border-radius: 0 0 50px 50px;
+.rb-img:hover, .hz-img:hover, .ph-img:hover {
+    opacity: 0.5;
+    border-radius: 50%;
+    border-color: var(--element);
 }
 
 /* Contact sec. - START */
@@ -189,7 +191,7 @@ header nav { /* fix sticky */
     align-content: center;
 }
 
-.contact h3 {
+.contact h2 {
     width: 100%;
     display: flex;
     justify-content: center;
