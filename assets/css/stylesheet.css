@@ -138,6 +138,19 @@ header nav { /* fix sticky */
     background-position: center;
 } */
 
+/* About sec. - START */
+.about {
+    border: 1px solid red;
+}
+
+.about figure {
+    border: 2px solid blueviolet;
+}
+
+.profile-info {
+    border: 2px solid green;
+}
+
 /* Projects sec. - START */
 .projects {
     padding: var(--bpadding);
