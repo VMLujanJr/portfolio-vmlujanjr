@@ -140,12 +140,12 @@ header nav { /* fix sticky */
     list-style-type: disc;
 }
 /* Projects sec. - START */
-.projects {
+/* .projects {
     padding: var(--bpadding);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-}
+} */
 
 .projects h2 {
     width: 100%;
