@@ -305,8 +305,33 @@ footer {
 
 @media screen and (min-width: 980px) {
     .avatar {
-        width: 34%;
-        float: left;
+        width: 50%;
         padding-right: 30px;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+    .about, .projects, .contact {
+        width: 50%;
+    }
+
+    .contact address {
+        margin: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .git {
+        color: var(--black);
+        text-decoration: none;
+    }
+
+    .git:hover {
+        color: var(--comment);
     }
 }
